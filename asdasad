@@ -1,0 +1,40 @@
+local myName = 'Norman' 
+
+_G.autoTap = true; 
+while _G.autoTap == true do
+
+
+local args = {
+    [1] = "TrainStat",
+    [2] = "Strength"
+}
+
+game:GetService("ReplicatedStorage").Events:FindFirstChild("Stats/RemoteFunction"):InvokeServer(unpack(args))
+
+
+local args = {
+    [1] = "TrainStat",
+    [2] = "Durability"
+}
+
+game:GetService("ReplicatedStorage").Events:FindFirstChild("Stats/RemoteFunction"):InvokeServer(unpack(args))
+
+
+local args = {
+    [1] = "TrainStat",
+    [2] = "Speed"
+}
+
+game:GetService("ReplicatedStorage").Events:FindFirstChild("Stats/RemoteFunction"):InvokeServer(unpack(args))
+
+
+local args = {
+    [1] = "TrainStat",
+    [2] = "Chakra"
+}
+
+game:GetService("ReplicatedStorage").Events:FindFirstChild("Stats/RemoteFunction"):InvokeServer(unpack(args))
+
+
+wait(0.0001)
+end
